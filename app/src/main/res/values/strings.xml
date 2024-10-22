@@ -15,5 +15,12 @@
     <string name="title_activity_book">BookActivity</string>
     <string name="title_activity_counter">CounterActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_internet_connect">InternetConnectActivity</string>
+    <string name="title_activity_internet">InternetActivity</string>
+    <string name="title_activity_greet">GreetActivity</string>
 
+    <string name="greeting_welcome" type="id">Welcome. What is your name?</string>
+    <string name="greeting_hint">Enter your name</string>
+    <string name="greeting_btn">Done</string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>

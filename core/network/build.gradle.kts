@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.ucb.android.library)
-    alias(libs.plugins.kapt)
+    alias(libs.plugins.ksp)
+//    alias(libs.plugins.kapt)
 }
 
 android {
@@ -12,9 +13,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.moshi)
     implementation(libs.converter.moshi)
-    kapt(libs.moshi.kapt)
-}
-
-kapt {
-    correctErrorTypes = true
+    implementation(project(":core:model"))
+    ksp(libs.moshi.kapt)
 }

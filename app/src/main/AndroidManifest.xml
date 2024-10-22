@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,9 +16,9 @@
         android:theme="@style/Theme.FrankyApp"
         tools:targetApi="31">
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".cataas.HomeActivity"
             android:exported="true"
-            android:label="@string/title_activity_login"
+            android:label="@string/title_activity_home"
             android:theme="@style/Theme.FrankyApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,16 +27,43 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".greeting.GreetActivity"
+            android:exported="true"
+            android:label="@string/title_activity_greet"
+            android:theme="@style/Theme.FrankyApp">
+
+        </activity>
+        <activity
+            android:name=".internetconnect.InternetConnectActivity"
+            android:exported="false"
+            android:label="@string/title_activity_internet"
+            android:theme="@style/Theme.FrankyApp" />
+        <activity
+            android:name=".internetconnectionmvvm.InternetActivity"
+            android:exported="true"
+            android:label="@string/title_activity_internet_connect"
+            android:theme="@style/Theme.FrankyApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.FrankyApp" />
+        <activity
             android:name=".CounterActivity"
             android:exported="true"
             android:label="@string/title_activity_counter"
-            android:theme="@style/Theme.FrankyApp"></activity>
+            android:theme="@style/Theme.FrankyApp" />
         <activity
             android:name=".BookActivity"
             android:exported="true"
             android:label="@string/title_activity_book"
-            android:theme="@style/Theme.FrankyApp">
-        </activity>
+            android:theme="@style/Theme.FrankyApp" />
         <activity
             android:name=".ScaffoldActivity"
             android:exported="true"

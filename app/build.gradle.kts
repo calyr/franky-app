@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-//    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -76,5 +76,7 @@ dependencies {
     implementation(project(":data"))
     implementation("androidx.compose.ui:ui-text-google-fonts:1.6.8")
     implementation(project(":core:data"))
+    implementation(project(":core:model"))
+    implementation(project(":core:repository"))
 
 }
